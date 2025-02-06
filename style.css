@@ -5,6 +5,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .header, .first-content, .footer{
@@ -15,13 +16,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 100px;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     font-weight: bold;
+    flex:1;
 }
+
 .menu {
     display: flex;
     list-style-type: none;
@@ -34,10 +38,27 @@ a {
     font-size: 18px;
 }
 
-.first-content {
+li {
+    justify-self: flex-end;
+}
+
+.first-content, .second-content, .third-content, .fourth-content {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+.first-content {
+    padding: 20px 100px;
+}
+
+.first-content .container {
+    flex: 1;
+}
+
+.image img {
+    width: 400px;
+    max-height: 200px;
 }
 
 .button1, .button2 {
@@ -45,10 +66,8 @@ a {
     color: #E5E7EB;
 }
 
-.second-content {
-    display: flex;
+.contents .second-content {
     flex-direction: column;
-    align-items: center;
 }
 
 .images {
@@ -66,10 +85,7 @@ a {
 
 .third-content {
     background-color: #E5E7EB;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #name {
@@ -79,9 +95,6 @@ a {
 
 .fourth-content {
     background-color: #3882F6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .fourth-content .container {
@@ -94,4 +107,10 @@ a {
 .footer {
     text-align: center;
 }
+
+img {
+    width: 400px;
+    max-height: 200px;
+}
+
 
